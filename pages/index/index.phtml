@@ -1,0 +1,68 @@
+<?php echo $header; ?>
+<main class="index">
+	<div class="top-box">
+		<div class="title">Önkéntes Nyugdíjpénztár</div>
+	</div>
+	<section class="form">
+		<div class="container">
+			<div class="form-top">
+				<h2>Kérjük az alábbi adatokat / okmányokat készítse elő:</h2>
+				<p>Lakcím, Adószám</p>
+				<p>Amennyiben megjelöl kedvezményezett(ek)et:</p>
+				<p>Kedvezményezett(ek) neve, címe, születési adatai, anyja neve, adóazonosító jele</p>
+			</div>
+			<form method="post">
+				<div class="form-title">
+					<h2>Kérjük adja meg az alábbi adatait:<span>a csillaggal(*) jelölt mezők kitöltése kötelező!</span></h2>
+				</div>
+				<div class="form-control">
+					<div class="left">
+						<label for="surname">Vezetéknév: <span>*</span></label>
+						<input id="surname" type="text" required>
+					</div>
+					<div class="right">
+						<label for="firstname">Keresztnév: <span>*</span></label>
+						<input id="firstname" type="text" required>
+					</div>
+				</div>
+				<div class="form-control">
+					<div class="left">
+						<label for="email">E-mail: <span>*</span></label>
+						<input id="email" type="email" required>
+					</div>
+					<div class="right">
+						<label for="phone">Telefon:</label>
+						<input id="phone" type="text">
+					</div>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" /><label for="checkboxG1" class="css-label">Elfogadom az alábbi <a href="#">adatkezelési irányelveket</a></label>
+					<p>Az adatlap elküldésével hozzájárulok, hogy AEGON Magyarország Pénztárszolgáltató Zrt. (Pénztárszolgáltató) a jelen nyilatkozaton megadott személyes adataimat az önkéntes nyugdíjpénztári tagsági jogviszonyom létrehozása  érdekében kezelje, ezzel kapcsolatban telefonon,
+					illetve e-mailben megkeressen a regisztrációt követő 6 hónapig.</p>
+				</div>
+			</form>
+		</div>
+	</section>
+	<section class="login-mode">
+		<div class="container">
+			<h2>Válasszki, melyik az ön számára kényelmesebb mód a belépésre!</h2>
+			<div class="phone fill">
+				<div class="logo"></div>
+				<h3>Telefonos kitöltés</h3>
+				<p>A lenti adatok megadását követően, rövid időn belül telefonos munkatársunk felhívja Önt és elvégzi a kitöltést Ön helyett.</p>
+				<p>Fontos, hogy olyan elérhetőségeket adjon meg, amelyen valóban elérjük Önt.</p>
+				<a class="btn-blue" href="/aegon/telefonos-kitoltes">Belépés</a>
+			<footer>Telefonos operátorunk visszahívja Önt</footer>
+		</div>
+		<div class="self fill">
+			<div class="logo"></div>
+			<h3>Önálló kitöltés</h3>
+			<p>Lépjen be most az Aegon Önkéntes Nyugdíjpénztárba! Az online belépési felület használatával önállóan elindíthatja a belépési folyamatot.</p>
+			<p>Fontos, hogy Ön a kitöltés közben is segítséget kaphat.</p>
+			<a class="btn-blue" href="#">Belépés</a>
+		<footer>Adatait megadhatja önállóan</footer>
+	</div>
+	</div>
+	</section>
+</main>
+<?php echo $footer; ?>

@@ -1,0 +1,57 @@
+.navigation{
+	height: 64px;
+	position: relative;
+	margin: 70px auto 21px;
+	&.phone{
+		width: 210px;
+		&:before{
+			position: absolute;
+			content: " ";
+			background-color: #b0bec5;
+			height: 1px;
+			width: 100%;
+			left: 0;
+			right: 0;
+			top: 31.5px;
+		}
+	}
+	li{
+		display: inline-block;
+		height: inherit;
+		position: relative;
+		margin-right: 174px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	a{
+		pointer-events: none;
+        cursor: default;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        width: 32px;
+        height: 32px;
+        color: #fff;
+        background-color: #b0bec5;
+        border-radius: 50%;
+        font-weight: bold;
+        &.active{
+        	width: 64px;
+        	height: 64px;
+        	border: 4px solid #0079c2;
+        	color: #0079c2;
+        	background-color: #fff;
+        	font-size: 24px;
+        }
+
+	}
+	span{
+		/* Azért így teszem középre mert bugol a line-height al és nem lesz sosem középen! */
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		position: absolute;
+	}
+}

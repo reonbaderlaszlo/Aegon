@@ -1,0 +1,17 @@
+/* Header */
+header{
+	margin: 20px auto 0 auto;
+	width: 970px;
+	height: 165px;
+	max-width: 100%;
+	background: #fff url('../images/header/header.png') no-repeat center top;
+	position: relative;
+	.logo{
+		display: block;
+		position: absolute;
+		width: 231px;
+		height: 149px;
+		top: 16px;
+		background:  url('../images/header/logo.png') no-repeat center;
+	}
+}
