@@ -107,6 +107,7 @@
 
 .radio-buttons {
     text-align: center;
+
     input[type=radio].css-checkbox {
         position: absolute;
         z-index: -1000;
@@ -132,7 +133,8 @@
         letter-spacing: -0.025em;
         color: #555555;
         margin-right: 20px;
-        &:last-child{
+
+        &:last-child {
             margin-right: 0;
         }
     }
@@ -151,10 +153,28 @@
         user-select: none;
     }
 }
-    [type="submit"]{
-        
-        cursor: pointer;
-        font-size: inherit;
-        border: 0;
-        margin: 0 auto 42px;
-    }   
+
+[type="submit"] {
+    cursor: pointer;
+    font-size: inherit;
+    border: 0;
+    margin: 0 auto 42px;
+}
+
+.form-box-title {
+    height: 60px;
+    line-height: 60px;
+    box-shadow: 0 1px #d9dadb;
+    font-size: 24px;
+    color: #007ac3;
+    margin: 0 -20px 20px;
+    padding: 0 20px;
+}
+
+.sub-title {
+    text-align: center;
+    font-weight: 700;
+    color: #282828;
+    margin: 38px 0 15px;
+    position: relative;
+}

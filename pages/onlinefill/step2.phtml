@@ -1,0 +1,116 @@
+<?php echo $header; ?>
+<main class="online-fill-step2">
+<div class="container">
+	<h1>Önkéntes Nyugdíjpénztár</h1>
+	<h2>Kérjük, az önkéntes nyugdíjpénztári belépéshez adja meg az alábbi adatokat.</h2>
+	<ul class="navigation online">
+		<li><a href="#"><span>1</span></a></li>
+		<li><a class="active" href="#"><span>2</span></a></li>
+		<li><a href="#"><span>3</span></a></li>
+		<li><a href="#"><span>4</span></a></li>
+		<li><a href="#"><span>5</span></a></li>
+	</ul>
+	<div class="form-title-blue">Elérhetőség<a href="#" class="help">Segítséget kérek</a></div>
+	<form>
+		<div class="form-box first">
+			<div class="form-box-title">Állandó lakcím:</div>
+			<div class="form-control">
+				<div class="box">
+					<label for="country">Ország:</label>
+					<input id="country" type="text">
+				</div>
+			</div>
+			<div class="form-control">
+				<div class="box">
+					<label for="zipcode">Irányítószám:</label>
+					<input id="zipcode" type="number">
+					<span>Kazincbarcika</span>
+				</div>
+			</div>
+			<div class="form-control">
+				<div class="box">
+					<label for="address">Cím:</label>
+					<input id="address" type="text">
+				</div>
+				<div class="box">
+					<label for="house-number">Házszám:</label>
+					<input id="house-number" type="text">
+				</div>
+				<div class="box">
+					<label for="floor">Emelet:</label>
+					<input id="floor" type="text">
+				</div>
+				<div class="box">
+					<label for="door">Ajtó:</label>
+					<input id="door" type="text">
+				</div>
+			</div>
+		</div>
+		<div class="form-box second">
+			<div class="form-box-title">Levelezési cím:</div>
+			<div class="checkbox checked">
+				<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" />
+				<label for="checkboxG1" class="css-label">Eltér az állandó lakcímtől</label>
+			</div>
+			<div class="hidden">
+				<div class="form-control">
+					<div class="box">
+						<label for="country-2">Ország:</label>
+						<input id="country-2" type="text">
+					</div>
+				</div>
+				<div class="form-control">
+					<div class="box">
+						<label for="zipcode-2">Irányítószám:</label>
+						<input id="zipcode-2" type="number">
+						<span>Kazincbarcika</span>
+					</div>
+				</div>
+				<div class="form-control">
+					<div class="box">
+						<label for="address-2">Cím:</label>
+						<input id="address-2" type="text">
+					</div>
+					<div class="box">
+						<label for="house-number-2">Házszám:</label>
+						<input id="house-number-2" type="text">
+					</div>
+					<div class="box">
+						<label for="floor-2">Emelet:</label>
+						<input id="floor-2" type="text">
+					</div>
+					<div class="box">
+						<label for="door-2">Ajtó:</label>
+						<input id="door-2" type="text">
+					</div>
+				</div>
+			</div>
+			<div class="form-control">
+				<div class="box">
+					<label for="phone">Telefon:</label>
+					<input id="phone" type="text">
+				</div>
+				<div class="box">
+					<label for="email">E-mail cím:</label>
+					<input id="email" type="email">
+				</div>
+			</div>
+			<div class="checkbox">
+				<input type="checkbox" name="checkboxG2" id="checkboxG2" class="css-checkbox" />
+				<label for="checkboxG2" class="css-label">Szeretném Online intézni az ügyeimet a jövőben.</label>
+			</div>
+			<div class="checkbox">
+				<input type="checkbox" name="checkboxG3" id="checkboxG3" class="css-checkbox" />
+				<label for="checkboxG3" class="css-label">SMS értesítést kérek a belépési folyamattal kapcsolatban.</label>
+			</div>
+			<div class="checkbox">
+				<input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" />
+				<label for="checkboxG4" class="css-label">Szeretném az e-Posta szolgáltatást, és az online ügyfélszolgálaton keresztül intézni ügyeimet.</label>
+			</div>
+		</div>
+		<a href="/aegon/online-kitoltes/lepes-1" class="btn-ghost">Vissza</a>
+		<input class="btn-blue" type="submit" value="Következő">
+		</form>
+	</div>
+	</main>
+	<?php echo $footer; ?>

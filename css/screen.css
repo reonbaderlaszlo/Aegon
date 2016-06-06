@@ -148,6 +148,21 @@ h2 {
   background-color: #28a1e9;
 }
 
+.btn-ghost {
+  display: block;
+  width: 118px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 8px;
+  background: #fff url("../images/base/back-icon.png") no-repeat top 25px left 28px;
+  border: solid 1px #cecece;
+  color: #007ac3;
+  text-align: center;
+  position: absolute;
+  bottom: 42px;
+  padding-left: 10px;
+}
+
 /* FORMS */
 .form-control {
   margin-bottom: 18px;
@@ -304,6 +319,24 @@ h2 {
   font-size: inherit;
   border: 0;
   margin: 0 auto 42px;
+}
+
+.form-box-title {
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 0 1px #d9dadb;
+  font-size: 24px;
+  color: #007ac3;
+  margin: 0 -20px 20px;
+  padding: 0 20px;
+}
+
+.sub-title {
+  text-align: center;
+  font-weight: 700;
+  color: #282828;
+  margin: 38px 0 15px;
+  position: relative;
 }
 
 .navigation {
@@ -843,22 +876,6 @@ header .logo {
   margin-bottom: 40px;
 }
 
-.phone-fill .form-box .title {
-  height: 60px;
-  line-height: 60px;
-  box-shadow: 0 1px #d9dadb;
-  font-size: 24px;
-  color: #007ac3;
-  margin-bottom: 20px;
-}
-
-.phone-fill .form-box .sub-title {
-  text-align: center;
-  font-weight: 700;
-  color: #282828;
-  margin: 38px 0 15px;
-}
-
 .phone-fill .margin-fix {
   margin-top: 42px;
 }
@@ -1006,34 +1023,13 @@ header .logo {
 
 .online-fill .form-box.third .sub-title {
   color: #fff;
-  margin: 38px 0 15px;
 }
 
-.online-fill .form-box.third .title {
-  margin-left: -20px;
-  margin-right: -20px;
-  padding-left: 20px;
+.online-fill .form-box.third .form-box-title {
   color: #fff;
   background-color: rgba(0, 122, 195, 0);
   box-shadow: 0 1px #d9dadb;
   background-image: linear-gradient(to right, #007ac3 40%, #06b0e4);
-}
-
-.online-fill .form-box .title {
-  height: 60px;
-  line-height: 60px;
-  box-shadow: 0 1px #d9dadb;
-  font-size: 24px;
-  color: #007ac3;
-  margin-bottom: 20px;
-}
-
-.online-fill .form-box .sub-title {
-  text-align: center;
-  font-weight: 700;
-  color: #282828;
-  margin-top: 38px;
-  position: relative;
 }
 
 .online-fill .noUi-origin {
@@ -1059,6 +1055,112 @@ header .logo {
 
 .online-fill .little-ones div {
   background-color: #003f65;
+}
+
+.online-fill-step2 .form-box {
+  background-color: #f0f1f2;
+  padding: 0 20px;
+}
+
+.online-fill-step2 .form-box .box {
+  float: left;
+  position: relative;
+}
+
+.online-fill-step2 .form-box.first {
+  padding-bottom: 35px;
+  margin-bottom: 10px;
+}
+
+.online-fill-step2 .form-box.first .form-control:nth-of-type(2) .box {
+  width: 440px;
+}
+
+.online-fill-step2 .form-box.first .form-control:nth-of-type(3) .box {
+  position: relative;
+}
+
+.online-fill-step2 .form-box.first .form-control:nth-of-type(3) .box input {
+  width: 225px;
+  float: left;
+}
+
+.online-fill-step2 .form-box.first .form-control:nth-of-type(3) .box span {
+  font-weight: 700;
+  font-size: 24px;
+  float: left;
+  line-height: 54px;
+  padding-left: 20px;
+}
+
+.online-fill-step2 .form-box.first .form-control:nth-of-type(4) .box:first-child {
+  width: 440px;
+  margin-right: 20px;
+}
+
+.online-fill-step2 .form-box.first .form-control:nth-of-type(4) .box {
+  width: 133px;
+  margin-right: 20px;
+}
+
+.online-fill-step2 .form-box.first .form-control:nth-of-type(4) .box:last-child {
+  margin-right: 0;
+}
+
+.online-fill-step2 .form-box .hidden .form-control:first-child(1) .box {
+  width: 440px;
+}
+
+.online-fill-step2 .form-box .hidden .form-control:nth-child(2) .box {
+  position: relative;
+}
+
+.online-fill-step2 .form-box .hidden .form-control:nth-child(2) .box input {
+  width: 225px;
+  float: left;
+}
+
+.online-fill-step2 .form-box .hidden .form-control:nth-child(2) .box span {
+  font-weight: 700;
+  font-size: 24px;
+  float: left;
+  line-height: 54px;
+  padding-left: 20px;
+}
+
+.online-fill-step2 .form-box .hidden .form-control:last-child .box:first-child {
+  width: 440px;
+  margin-right: 20px;
+}
+
+.online-fill-step2 .form-box .hidden .form-control:last-child .box {
+  width: 133px;
+  margin-right: 20px;
+}
+
+.online-fill-step2 .form-box .hidden .form-control:last-child .box:last-child {
+  margin-right: 0;
+}
+
+.online-fill-step2 .form-box.second {
+  padding-bottom: 35px;
+  margin-bottom: 40px;
+}
+
+.online-fill-step2 .form-box.second .form-control {
+  margin-top: 50px;
+}
+
+.online-fill-step2 .form-box.second .form-control .box {
+  width: 440px;
+}
+
+.online-fill-step2 .form-box.second .form-control .box:first-child {
+  margin-right: 20px;
+}
+
+.online-fill-step2 .hidden {
+  display: none;
 }
 
 /*==========  Mobile First Method  ==========*/
