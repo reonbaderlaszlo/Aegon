@@ -45,7 +45,8 @@
         color: lightblue;
     }
 }
-main{
+
+main {
     width: 970px;
     margin: 0 auto 110px auto;
     max-width: 100%;
@@ -53,6 +54,163 @@ main{
     border-width: 0 1px 1px;
     border-style: solid;
     border-color: #e2e5e8;
-    @extend .clear;
 
+    @extend .clear;
+}
+
+/* Sliders */
+.sliders {
+    width: 690px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    > div {
+        height: 10px;
+        position: relative;
+        margin-top: 70px;
+
+        &:before, &:after {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            content: " ";
+            top: -10px;
+        }
+
+        &:before {
+            left: -17px;
+            background-color: #007ac3;
+        }
+
+        &:after {
+            right: -13px;
+            background-color: #b0bec5;
+        }
+    }
+}
+
+/* Slider */
+
+.prizes {
+    padding: 18px 85px;
+    font-weight: 700;
+
+    div {
+        width: 33.33334%;
+        float: left;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .right {
+        text-align: right;
+    }
+}
+
+.little-ones {
+    width: 690px;
+    margin: 0 auto;
+
+    div {
+        width: 2px;
+        height: 5px;
+        background-color: #b0bec5;
+        float: left;
+        margin-left: 12.175%;
+    }
+}
+
+.prize-1, .prize-2, .prize-3 {
+    width: 112px;
+    height: 56px;
+    line-height: 49px;
+    font-size: 26px;
+    color: #282828;
+    font-weight: 700;
+    text-align: center;
+    background: url("../images/base/price-popup.png") no-repeat center;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    &:after {
+        content: attr(data-line);
+        position: absolute;
+        top: 0;
+        right: -49px;
+        font-size: 16px;
+    }
+}
+
+.prize-wrapper {
+    max-width: 100%;
+    margin: 0 46px;
+    position: relative;
+}
+
+/* Help */
+.help {
+    width: 158px;
+    height: 40px;
+    border-radius: 4px;
+    background: #007ac3 url("../images/base/help.png") no-repeat center left 10px;
+    border: solid 1px #fff;
+    color: #fff;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 10px;
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    font-weight: 400;
+}
+
+/* Pop UP */
+.info-popup {
+    a {
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        right: 20px;
+        top: -3px;
+        background: #007ac3 url("../images/base/i-white.png") no-repeat center;
+    }
+
+    .popup {
+        position: absolute;
+        display: none;
+        width: 440px;
+        max-width: 100%;
+        padding: 20px;
+        border-radius: 6px;
+        bottom: 97px;
+        background-color: #007ac3;
+        color: #fff;
+        line-height: 18px;
+        font-size: 14px;
+        z-index: 10;
+
+        h4 {
+            font-weight: 700;
+        }
+
+        &:after {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px 11px 0 11px;
+            border-color: #007cc3 transparent transparent transparent;
+            position: absolute;
+            content: " ";
+            bottom: -10px;
+            right: 19px;
+        }
+    }
 }

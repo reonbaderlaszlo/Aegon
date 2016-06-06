@@ -1,6 +1,115 @@
-.phone-fill{
-	h2{
-		padding: 0 95px;
-		line-height: 30px;
-	}
+.phone-fill {
+    h2 {
+        padding: 0 95px;
+        line-height: 30px;
+    }
+
+    .form-box {
+        background-color: #f0f1f2;
+        padding: 0 20px;
+
+        .box {
+            float: left;
+        }
+
+        &.first {
+            min-height: 180px;
+            margin-bottom: -5px;
+
+            .box {
+                &:first-child, &:nth-child(2) {
+                    width: 320px;
+                    max-width: 100%;
+                    margin-right: 20px;
+                }
+
+                &:last-child {
+                    width: 220px;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        &.second {
+            min-height: 279px;
+            margin-bottom: -5px;
+
+            .box {
+                &:first-child, &:nth-child(2) {
+                    width: 440px;
+                    max-width: 100%;
+                }
+
+                &:first-child {
+                    margin-right: 20px;
+                }
+
+                &:last-child {
+                    width: 220px;
+                    max-width: 100%;
+                    margin-top: 17px;
+                }
+            }
+        }
+
+        &.third {
+            margin-bottom: 10px;
+        }
+
+        &.fourth {
+            min-height: 168px;
+            margin-bottom: 40px;
+        }
+
+        .title {
+            height: 60px;
+            line-height: 60px;
+            box-shadow: 0 1px #d9dadb;
+            font-size: 24px;
+            color: #007ac3;
+            margin-bottom: 20px;
+        }
+
+        .sub-title {
+            text-align: center;
+            font-weight: 700;
+            color: #282828;
+            margin: 38px 0 15px;
+        }
+    }
+
+    .margin-fix {
+        margin-top: 42px;
+    }
+
+    .checkbox {
+        label {
+            font-size: 14px;
+            line-height: 20px !important;
+            margin-bottom: 65px;
+
+            a {
+                font-weight: 700;
+                color: #0070bb;
+            }
+        }
+    }
+}
+
+.phone-fill-end {
+    padding: 0 20px;
+
+    h3 {
+        font-size: 24px;
+        padding: 75px 0 33px;
+
+        span {
+            font-weight: 700;
+            color: #007ac3;
+        }
+    }
+
+    p {
+        padding-bottom: 30px;
+    }
 }

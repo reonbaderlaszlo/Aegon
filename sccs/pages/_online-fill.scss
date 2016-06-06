@@ -1,0 +1,171 @@
+.online-fill {
+    h2 {
+        padding: 0 145px;
+        line-height: 30px;
+    }
+
+    .form-box {
+        background-color: #f0f1f2;
+        padding: 0 20px;
+
+        .box {
+            float: left;
+            position: relative;
+        }
+
+        &.first {
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+
+            .radio-buttons {
+                text-align: left;
+            }
+
+            .box {
+                width: 440px;
+
+                > span {
+                    display: block;
+                    font-size: 14px;
+                    padding-bottom: 20px;
+                }
+            }
+
+            .form-control {
+                float: left;
+
+                &:nth-of-type(3) {
+                    .box {
+                        margin-left: 20px;
+                        width: 226px;
+                    }
+                }
+
+                &:nth-of-type(4), &:nth-of-type(5) {
+                    .box:last-child {
+                        margin-left: 20px;
+                    }
+                }
+
+                &:nth-of-type(5) .box:last-child {
+                    width: 220px;
+                }
+            }
+        }
+
+        &.second {
+            padding-bottom: 35px;
+            margin-bottom: 10px;
+
+            .box {
+                width: 440px;
+
+                &:last-child {
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        &.third {
+            background-color: #0d6aa2;
+            color: #fff;
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+
+            .first{
+                .info-popup a{
+                    right: 161px;
+                }
+                .popup{
+                    right: 140px;
+                }
+            }
+            .second{
+                 .info-popup a{
+                    right: 111px;                    
+                }
+                .popup{
+
+                    right: 91px;
+                }
+            }
+            .third{
+                .info-popup a{
+                    right: 67px;
+                }
+                .popup{
+                    right: 47px;
+                }
+            }
+
+             .info-popup a{
+                background: #fff url('../images/base/i-blue.png') no-repeat center;
+                top: 1px;
+            }
+            .popup{       
+                bottom: 40px;         
+                background-color: #fff;
+                border: solid 1px #d5d8db;
+                color: #555555;
+                text-align: left;
+                &:after{
+                    border-color: #fff transparent transparent transparent;
+                }
+            }
+
+            .sub-title {
+                color: #fff;
+                margin: 38px 0 15px;
+            }
+
+            .title {
+                margin-left: -20px;
+                margin-right: -20px;
+                padding-left: 20px;
+                color: #fff;
+                background-color: rgba(0, 122, 195, 0);
+                box-shadow: 0 1px #d9dadb;
+                background-image: linear-gradient(to right, #007ac3 40%, #06b0e4);
+            }
+        }
+
+        .title {
+            height: 60px;
+            line-height: 60px;
+            box-shadow: 0 1px #d9dadb;
+            font-size: 24px;
+            color: #007ac3;
+            margin-bottom: 20px;
+        }
+
+        .sub-title {
+            text-align: center;
+            font-weight: 700;
+            color: #282828;
+            margin-top: 38px;
+            position: relative;
+           
+        }
+    }
+    .noUi-origin{
+        background-color: #003f65;
+    }
+    .sliders > div:after{
+        background-color: #003f65;
+    }
+    .sliders > div:before, .noUi-base{
+        background-color: #6fc9ff;
+    }
+    .noUi-handle{
+        background-color: #003f65;
+        border: solid 2px #fff;
+    }
+    .prize-1:after, .prize-2:after, .prize-3:after{
+        color: #fff;
+    }
+    .little-ones{
+        div{
+            background-color: #003f65;
+        }
+    }
+}

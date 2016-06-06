@@ -5,6 +5,9 @@
     background-color: #007ac3;
     font-weight: 700;
     display: block;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
 
     @include transition-all;
 
