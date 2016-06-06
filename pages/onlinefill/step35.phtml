@@ -1,0 +1,65 @@
+<?php echo $header; ?>
+<main class="online-fill-step35">
+<div class="container">
+	<h1>Önkéntes Nyugdíjpénztár</h1>
+	<h2>Kérjük, az önkéntes nyugdíjpénztári belépéshez adja meg az alábbi adatokat.</h2>
+	<ul class="navigation online">
+		<li><a href="#"><span>1</span></a></li>
+		<li><a href="#"><span>2</span></a></li>
+		<li><a class="active" href="#"><span>3</span></a></li>
+		<li><a href="#"><span>4</span></a></li>
+		<li><a href="#"><span>5</span></a></li>
+	</ul>
+	<div class="form-title-blue">Tagdíj<a href="#" class="help">Segítséget kérek</a></div>
+	<form action="/aegon/online-kitoltes/lepes-4">
+		<div class="form-box">
+			<div class="form-control">
+				<div class="box">
+					<label for="membership-fee">Vállalt havi tagdíj összesen:</label>
+					<input id="membership-fee" type="text">
+				</div>
+				<div class="box">
+					<label for="percentage">Munkabér x %-a:</label>
+					<input id="percentage" type="number">
+					<span>%</span>
+				</div>
+			</div>
+			<div class="form-control">
+				<div class="box">
+					<label for="employer-name">Munkáltató neve:</label>
+					<input id="employer-name" type="text">
+				</div>
+				<div class="box">
+					<label for="percentage-2">Munkáltató által vállalt havi tagdíj mértéke:</label>
+					<input id="percentage-2" type="number">
+					<span>%</span>
+				</div>
+			</div>
+			<div class="form-control">
+				<span>Szeretne örököstől eltérő kedvezményezetteket megjelölni?
+					<div class="info-popup">
+						<a href="#"></a>
+						<div class="popup">
+							<h4>Azonosító okmány típusa:</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate non inventore, ea nemo, suscipit laborum, similique illo rem quos itaque praesentium iusto beatae vitae excepturi, minus maxime qui ducimus eos!</p>
+						</div>
+					</div>
+				</span>
+				<div class="radio-buttons">
+					<input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" /><label for="radio1" class="css-label ">Nem</label>
+					<input type="radio" name="radiog_lite" id="radio2" class="css-checkbox" /><label for="radio2" class="css-label ">Igen</label>
+				</div>
+			</div>
+			<div class="form-control">
+				<div class="box">
+					<label for="beneficiaries">Kedvezményezettek száma:</label>
+					<input id="beneficiaries" type="nunber">
+				</div>
+			</div>
+		</div>
+		<a href="/aegon/online-kitoltes/lepes-3" class="btn-ghost">Vissza</a>
+		<input class="btn-blue" type="submit" value="Következő">
+	</form>
+</div>
+</main>
+<?php echo $footer; ?>

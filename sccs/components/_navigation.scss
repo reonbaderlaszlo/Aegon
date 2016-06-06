@@ -8,7 +8,8 @@
 		
 	}
 	&.online{
-		width: 713px;
+		width: 745px;
+		max-width: 100%;
 	}
 	&:before{
 			position: absolute;
@@ -49,6 +50,7 @@
         	color: #0079c2;
         	background-color: #fff;
         	font-size: 24px;
+        	margin-left: -16px;
         }
 
 	}

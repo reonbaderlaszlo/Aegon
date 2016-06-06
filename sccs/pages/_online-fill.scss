@@ -1,9 +1,11 @@
-.online-fill {
+.online-fill, .online-fill-step2, .online-fill-step3, .online-fill-step35, .online-fill-step4, .online-fill-step5 {
     h2 {
         padding: 0 145px;
         line-height: 30px;
     }
+}
 
+.online-fill {
     .form-box {
         background-color: #f0f1f2;
         padding: 0 20px;
@@ -169,23 +171,28 @@
             float: left;
             position: relative;
         }
-        &.first{
+
+        &.first {
             padding-bottom: 35px;
             margin-bottom: 10px;
-            .form-control{
-                &:nth-of-type(2){
-                    .box{
+
+            .form-control {
+                &:nth-of-type(2) {
+                    .box {
                         width: 440px;
                     }
                 }
-                &:nth-of-type(3){
-                    .box{                        
+
+                &:nth-of-type(3) {
+                    .box {
                         position: relative;
-                        input{
-                            width: 225px;
+
+                        input {
+                            width: 220px;
                             float: left;
                         }
-                        span{
+
+                        span {
                             font-weight: 700;
                             font-size: 24px;
                             float: left;
@@ -194,36 +201,43 @@
                         }
                     }
                 }
-                &:nth-of-type(4){
-                    .box:first-child{
+
+                &:nth-of-type(4) {
+                    .box:first-child {
                         width: 440px;
                         margin-right: 20px;
                     }
-                    .box{
+
+                    .box {
                         width: 133px;
                         margin-right: 20px;
-                        &:last-child{
+
+                        &:last-child {
                             margin-right: 0;
                         }
                     }
                 }
             }
         }
-        .hidden{
-            .form-control{
-                &:first-child(1){
-                    .box{
+
+        .hidden {
+            .form-control {
+                &:first-child(1) {
+                    .box {
                         width: 440px;
                     }
                 }
-                &:nth-child(2){
-                    .box{                        
+
+                &:nth-child(2) {
+                    .box {
                         position: relative;
-                        input{
-                            width: 225px;
+
+                        input {
+                            width: 220px;
                             float: left;
                         }
-                        span{
+
+                        span {
                             font-weight: 700;
                             font-size: 24px;
                             float: left;
@@ -232,33 +246,39 @@
                         }
                     }
                 }
-                &:last-child{
-                    .box:first-child{
+
+                &:last-child {
+                    .box:first-child {
                         width: 440px;
                         margin-right: 20px;
                     }
-                    .box{
+
+                    .box {
                         width: 133px;
                         margin-right: 20px;
-                        &:last-child{
+
+                        &:last-child {
                             margin-right: 0;
                         }
                     }
                 }
             }
         }
-        &.second{
-             padding-bottom: 35px;
-             margin-bottom: 40px;
-             .form-control{
+
+        &.second {
+            padding-bottom: 35px;
+            margin-bottom: 40px;
+
+            .form-control {
                 margin-top: 50px;
-                    .box{
-                        width: 440px;
-                        &:first-child{
-                            margin-right: 20px;
-                        }
+
+                .box {
+                    width: 440px;
+
+                    &:first-child {
+                        margin-right: 20px;
                     }
-                
+                }
             }
         }
     }
@@ -266,5 +286,276 @@
     .hidden {
         display: none;
     }
+}
 
+.online-fill-step3 {
+    .form-box {
+        background-color: #f0f1f2;
+        padding: 20px 20px 40px;
+        margin-bottom: 35px;
+    }
+
+    .radio-buttons {
+        text-align: left;
+    }
+
+    .box {
+        float: left;
+    }
+
+    .form-control {
+        span {
+            padding-bottom: 10px;
+            display: block;
+        }
+
+        &:first-child, &:last-child {
+            margin-bottom: 40px;
+
+            .box {
+                width: 440px;
+
+                &:first-child {
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .radio-buttons input[type=radio].css-checkbox + label.css-label {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+.online-fill-step35 {
+    .form-box {
+        background-color: #f0f1f2;
+        padding: 20px 20px 40px;
+        margin-bottom: 35px;
+    }
+
+    .form-control {
+        > span {
+            padding-bottom: 10px;
+            display: block;
+            position: relative;
+
+            .info-popup a {
+                right: 47.5%;
+                top: 0;
+            }
+
+            .popup {
+                bottom: 52px;
+                right: 44.7%;
+            }
+        }
+
+        .box {
+            float: left;
+            position: relative;
+
+            > span {
+                display: block;
+                position: absolute;
+                top: 25px;
+                line-height: 50px;
+                left: 140px;
+            }
+        }
+
+        &:first-child {
+            margin-bottom: 40px;
+
+            .box {
+                width: 440px;
+                margin-right: 20px;
+
+                &:last-child {
+                    margin-right: 0;
+                    width: 133px;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            margin-bottom: 40px;
+
+            .box {
+                &:first-child {
+                    width: 440px;
+                    margin-right: 20px;
+
+                    input {
+                        width: 100%;
+                    }
+                }
+
+                input {
+                    width: 133px;
+                }
+            }
+        }
+
+        &:last-child {
+            input {
+                width: 133px;
+            }
+        }
+
+        .radio-buttons {
+            text-align: left;
+        }
+
+        .radio-buttons input[type=radio].css-checkbox + label.css-label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.online-fill-step4 {
+    .form-box {
+        background-color: #f0f1f2;
+        padding: 0 20px;
+        .box{
+            float: left;
+        }
+        &.first{
+            padding-bottom: 40px;
+            margin-bottom: 10px;
+            .box{
+                width: 440px;
+                margin-right: 20px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+            .form-control:nth-child(3){
+                .box{
+                    &:last-child{
+                        width: 220px;
+                    }
+                }
+            }
+        }
+        &.second{
+           padding-bottom: 35px;
+            margin-bottom: 35px;
+
+            .form-control {
+                &:nth-of-type(2) {
+                    .box {
+                        width: 440px;
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    .box {
+                        position: relative;
+
+                        input {
+                            width: 220px;
+                            float: left;
+                        }
+
+                        span {
+                            font-weight: 700;
+                            font-size: 24px;
+                            float: left;
+                            line-height: 54px;
+                            padding-left: 20px;
+                        }
+                    }
+                }
+
+                &:nth-of-type(4) {
+                    .box:first-child {
+                        width: 440px;
+                        margin-right: 20px;
+                    }
+
+                    .box {
+                        width: 133px;
+                        margin-right: 20px;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+                &:last-child{
+                    .box{
+                            
+                        input{
+                            width: 133px;
+                        }
+                        position: relative;
+                    }
+                    span{
+                            display: block;
+                        position: absolute;
+                        top: 25px;
+                        line-height: 50px;
+                        left: 140px;
+                    }
+                }
+            }
+        }
+    }
+}
+.online-fill-step5{
+    .form-box{
+        background-color: #f0f1f2;
+        padding: 0 20px;
+    }
+    .first, .second, .third, .fourth{
+        margin-bottom: 10px;
+    }
+    .row{
+        float: left;
+        .box{
+            float: left;
+            width: 225px;
+            font-size: 14px;
+            margin-bottom: 33px;
+        }
+        span{
+            display: block;
+            padding-top: 10px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+    .checkbox{
+        margin-bottom: 50px;
+        font-size: 14px;
+        line-height: 20px;
+        a{
+            font-weight: bold;
+        }
+    }
+    .fourth{
+        padding-bottom: 90px;
+        margin-bottom: 80px;
+        position: relative;
+    }
+    .cant{
+        padding: 13px 60px 0 0;
+        width: 660px;
+        height: 64px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: -32px;
+        position: absolute;
+        text-align: center;
+        font-weight: bold;
+        background: #fff url('../images/base/mail.png') no-repeat right 24px center;
+    }
 }

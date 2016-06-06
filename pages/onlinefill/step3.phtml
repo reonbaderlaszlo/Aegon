@@ -1,0 +1,59 @@
+<?php echo $header; ?>
+<main class="online-fill-step3">
+<div class="container">
+	<h1>Önkéntes Nyugdíjpénztár</h1>
+	<h2>Kérjük, az önkéntes nyugdíjpénztári belépéshez adja meg az alábbi adatokat.</h2>
+	<ul class="navigation online">
+		<li><a href="#"><span>1</span></a></li>
+		<li><a href="#"><span>2</span></a></li>
+		<li><a class="active" href="#"><span>3</span></a></li>
+		<li><a href="#"><span>4</span></a></li>
+		<li><a href="#"><span>5</span></a></li>
+	</ul>
+	<div class="form-title-blue">Tagdíj<a href="#" class="help">Segítséget kérek</a></div>
+	<form action="/aegon/online-kitoltes/lepes-3.5">
+		<div class="form-box">
+			<div class="form-control">
+				<div class="box">
+					<span>Ki fizeti az önkéntes nyugdíjpénztári tagdíjat?</span>
+					<div class="radio-buttons">
+						<input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" /><label for="radio1" class="css-label ">A tagdíjat magam fizetem</label>
+						<input type="radio" name="radiog_lite" id="radio2" class="css-checkbox" /><label for="radio2" class="css-label ">A tagdíjat a munkáltatóm átvállalja</label>
+						<input type="radio" name="radiog_lite" id="radio3" class="css-checkbox" /><label for="radio3" class="css-label ">A tagdíjat a munkáltatóm és én közösen fizetjük</label>
+					</div>
+				</div>
+				<div class="box">
+					<span>Vállalom a tagdíj évenkénti értékkövetését</span>
+					<div class="radio-buttons">
+						<input type="radio" name="radiog_lite2" id="radio4" class="css-checkbox" /><label for="radio4" class="css-label ">Igen</label>
+						<input type="radio" name="radiog_lite2" id="radio5" class="css-checkbox" /><label for="radio5" class="css-label ">Nem</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-control">
+				<div class="box">
+					<span>Kérjük válasszon egy menedzselt alapot</span>
+					<div class="radio-buttons">
+						<input type="radio" name="radiog_lite3" id="radio6" class="css-checkbox" /><label for="radio6" class="css-label ">Klasszikus</label>
+						<input type="radio" name="radiog_lite3" id="radio7" class="css-checkbox" /><label for="radio7" class="css-label ">Kiegyensúlyozott</label>
+						<input type="radio" name="radiog_lite3" id="radio8" class="css-checkbox" /><label for="radio8" class="css-label ">Növekedési</label>
+						<input type="radio" name="radiog_lite3" id="radio9" class="css-checkbox" /><label for="radio9" class="css-label ">Szakértői</label>
+						<input type="radio" name="radiog_lite3" id="radio10" class="css-checkbox" /><label for="radio10" class="css-label ">Klímaváltozás</label>
+					</div>
+				</div>
+				<div class="box">
+					<span>Ön már tagja egy nyugdíjpénztárnak és onnan kíván átépéni?</span>
+					<div class="radio-buttons">
+						<input type="radio" name="radiog_lite4" id="radio11" class="css-checkbox" /><label for="radio11" class="css-label ">Igen</label>
+						<input type="radio" name="radiog_lite4" id="radio12" class="css-checkbox" /><label for="radio12" class="css-label ">Nem</label>
+					</div>
+					<input type="text">
+				</div>
+			</div>
+		</div>
+		<a href="/aegon/online-kitoltes/lepes-2" class="btn-ghost">Vissza</a>
+		<input class="btn-blue" type="submit" value="Következő">
+		</form>
+	</div>
+	</main>
+	<?php echo $footer; ?>
