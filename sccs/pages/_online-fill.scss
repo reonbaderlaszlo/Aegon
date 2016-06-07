@@ -1,22 +1,12 @@
-.online-fill, .online-fill-step2, .online-fill-step3, .online-fill-step35, .online-fill-step4, .online-fill-step5 {
-    h2 {
+.o-fix{    
         padding: 0 145px;
-        line-height: 30px;
-    }
+        line-height: 30px;    
 }
 
 .online-fill {
     .form-box {
-        background-color: #f0f1f2;
-        padding: 0 20px;
-
-        .box {
-            float: left;
-            position: relative;
-        }
 
         &.first {
-            margin-bottom: 10px;
             padding-bottom: 20px;
 
             .radio-buttons {
@@ -57,7 +47,6 @@
 
         &.second {
             padding-bottom: 35px;
-            margin-bottom: 10px;
 
             .box {
                 width: 440px;
@@ -164,17 +153,9 @@
 
 .online-fill-step2 {
     .form-box {
-        background-color: #f0f1f2;
-        padding: 0 20px;
-
-        .box {
-            float: left;
-            position: relative;
-        }
 
         &.first {
             padding-bottom: 35px;
-            margin-bottom: 10px;
 
             .form-control {
                 &:nth-of-type(2) {
@@ -268,9 +249,10 @@
         &.second {
             padding-bottom: 35px;
             margin-bottom: 40px;
-
-            .form-control {
-                margin-top: 50px;
+            .checked{
+                margin-bottom: 50px;
+            }
+            .form-control {                
 
                 .box {
                     width: 440px;
@@ -290,17 +272,12 @@
 
 .online-fill-step3 {
     .form-box {
-        background-color: #f0f1f2;
         padding: 20px 20px 40px;
         margin-bottom: 35px;
     }
 
     .radio-buttons {
         text-align: left;
-    }
-
-    .box {
-        float: left;
     }
 
     .form-control {
@@ -334,13 +311,12 @@
 
 .online-fill-step35 {
     .form-box {
-        background-color: #f0f1f2;
         padding: 20px 20px 40px;
         margin-bottom: 35px;
     }
 
     .form-control {
-        > span {
+        > div {
             padding-bottom: 10px;
             display: block;
             position: relative;
@@ -352,13 +328,11 @@
 
             .popup {
                 bottom: 52px;
-                right: 44.7%;
+                right: 45.3%;
             }
         }
 
         .box {
-            float: left;
-            position: relative;
 
             > span {
                 display: block;
@@ -421,14 +395,9 @@
 
 .online-fill-step4 {
     .form-box {
-        background-color: #f0f1f2;
-        padding: 0 20px;
-        .box{
-            float: left;
-        }
+
         &.first{
             padding-bottom: 40px;
-            margin-bottom: 10px;
             .box{
                 width: 440px;
                 margin-right: 20px;
@@ -510,12 +479,9 @@
     }
 }
 .online-fill-step5{
-    .form-box{
-        background-color: #f0f1f2;
-        padding: 0 20px;
-    }
-    .first, .second, .third, .fourth{
-        margin-bottom: 10px;
+
+    .btn-blue{        
+        margin: 0 auto 42px;
     }
     .row{
         float: left;
@@ -549,6 +515,7 @@
         padding: 13px 60px 0 0;
         width: 660px;
         height: 64px;
+        max-width: 100%;
         margin: 0 auto;
         left: 0;
         right: 0;
@@ -557,5 +524,60 @@
         text-align: center;
         font-weight: bold;
         background: #fff url('../images/base/mail.png') no-repeat right 24px center;
+    }
+}
+.online-fill-end{
+        padding: 0 20px 79px;
+
+    h3 {
+        font-size: 24px;
+        padding: 75px 0 33px;
+        position: relative;
+
+        span {
+            font-weight: 700;
+            color: #007ac3;
+        }
+    }
+
+    .help{
+        right: 35px;
+        top: 71px;
+    }
+
+    p {
+        padding-bottom: 30px;
+    }
+    h4{
+        padding-bottom: 10px;
+    }
+    li{
+        font-weight: 700;
+        line-height: 24px;
+    }
+    ul{
+        margin-bottom: 20px;
+
+    }
+    footer{
+        padding-bottom: 70px;
+        a{
+            font-weight: 700;
+            color: #007ac3;
+        }
+    }
+    .container > a{
+        width: 520px;
+        max-width: 100%;
+        border-radius: 8px;
+        background: #007ac3 url('../images/base/mail-white.png') no-repeat right 17px center;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        font-weight: 700;
+        color: #fff;
+        padding: 20.5px 52px 20.5px 0;
+        padding-right: 52px;
+        font-size: 14px;
     }
 }

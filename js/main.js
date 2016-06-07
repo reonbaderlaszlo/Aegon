@@ -12,7 +12,8 @@ $(document).ready(function() {
 
     });
 
-    $('.checked label').on('click', function() {
+    $('.checked label').on('click', function(e) {
+
 
         if ($('.checked input:checked')) {
 

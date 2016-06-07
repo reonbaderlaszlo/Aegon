@@ -56,6 +56,7 @@ ul, ol {
 input {
   box-shadow: none;
   border-radius: 0;
+  -webkit-appearance: none;
 }
 
 button, input, select, textarea {
@@ -64,6 +65,10 @@ button, input, select, textarea {
 
 button, input {
   overflow: visible;
+}
+
+select {
+  -webkit-appearance: none;
 }
 
 button, [type="submit"] {
@@ -131,6 +136,7 @@ h2 {
   color: #0070bb;
 }
 
+/* Buttons */
 .btn-blue {
   color: #fff;
   border-radius: 8px;
@@ -161,9 +167,14 @@ h2 {
   position: absolute;
   bottom: 42px;
   padding-left: 10px;
+  transition: 0.5s;
 }
 
-/* FORMS */
+.btn-ghost:hover {
+  background-color: #ebf1f4;
+}
+
+/* Forms */
 .form-control {
   margin-bottom: 18px;
 }
@@ -179,6 +190,8 @@ h2 {
   padding-left: 9px;
   display: block;
   margin-bottom: 4px;
+  position: relative;
+  z-index: 0;
 }
 
 .form-control label span {
@@ -186,7 +199,7 @@ h2 {
   font-weight: 700;
 }
 
-.form-control input {
+.form-control input, .form-control select {
   width: 100%;
   height: 54px;
   border-radius: 6px;
@@ -322,13 +335,11 @@ h2 {
 }
 
 .form-box-title {
-  height: 60px;
-  line-height: 60px;
   box-shadow: 0 1px #d9dadb;
   font-size: 24px;
   color: #007ac3;
   margin: 0 -20px 20px;
-  padding: 0 20px;
+  padding: 13.5px 20px;
 }
 
 .sub-title {
@@ -336,6 +347,17 @@ h2 {
   font-weight: 700;
   color: #282828;
   margin: 38px 0 15px;
+  position: relative;
+}
+
+.form-box {
+  background-color: #f0f1f2;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+.form-box .box {
+  float: left;
   position: relative;
 }
 
@@ -423,15 +445,17 @@ h2 {
   position: relative;
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
   .container {
-    width: 744px;
+    width: 100%;
   }
 }
 
 @media (min-width: 64em) {
   .container {
-    width: 960px;
+    width: 970px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -502,7 +526,6 @@ main {
   background-color: #b0bec5;
 }
 
-/* Slider */
 .prizes {
   padding: 18px 85px;
   font-weight: 700;
@@ -590,6 +613,7 @@ main {
   border-radius: 50%;
   right: 20px;
   top: -3px;
+  z-index: 10;
   background: #007ac3 url("../images/base/i-white.png") no-repeat center;
 }
 
@@ -630,7 +654,7 @@ header {
   width: 970px;
   height: 165px;
   max-width: 100%;
-  background: #fff url("../images/header/header.png") no-repeat center top;
+  background: #fff url("../images/header/header2.jpg") no-repeat center top;
   position: relative;
 }
 
@@ -675,7 +699,7 @@ header .logo {
   margin-top: 56px;
   background-color: #f0f1f2;
   text-align: center;
-  padding-top: 38px;
+  padding: 38px 0 33px;
   margin-bottom: 10px;
 }
 
@@ -695,7 +719,7 @@ header .logo {
 .index form {
   min-height: 428px;
   background-color: #f0f1f2;
-  padding: 40px 20px 0 20px;
+  padding: 40px 20px 20px;
 }
 
 .index form .form-title {
@@ -824,18 +848,8 @@ header .logo {
   line-height: 30px;
 }
 
-.phone-fill .form-box {
-  background-color: #f0f1f2;
-  padding: 0 20px;
-}
-
-.phone-fill .form-box .box {
-  float: left;
-}
-
-.phone-fill .form-box.first {
-  min-height: 180px;
-  margin-bottom: -5px;
+.phone-fill .form-box.first .box {
+  margin-bottom: 10px;
 }
 
 .phone-fill .form-box.first .box:first-child, .phone-fill .form-box.first .box:nth-child(2) {
@@ -849,9 +863,8 @@ header .logo {
   max-width: 100%;
 }
 
-.phone-fill .form-box.second {
-  min-height: 279px;
-  margin-bottom: -5px;
+.phone-fill .form-box.second .box {
+  margin-bottom: 10px;
 }
 
 .phone-fill .form-box.second .box:first-child, .phone-fill .form-box.second .box:nth-child(2) {
@@ -866,11 +879,6 @@ header .logo {
 .phone-fill .form-box.second .box:last-child {
   width: 220px;
   max-width: 100%;
-  margin-top: 17px;
-}
-
-.phone-fill .form-box.third {
-  margin-bottom: 10px;
 }
 
 .phone-fill .form-box.fourth {
@@ -893,6 +901,64 @@ header .logo {
   color: #0070bb;
 }
 
+.phone-fill-step2 .form-box {
+  background-color: #f0f1f2;
+  padding: 0 20px;
+}
+
+.phone-fill-step2 .row {
+  float: left;
+}
+
+.phone-fill-step2 .row .box {
+  float: left;
+  width: 225px;
+  font-size: 14px;
+  margin-bottom: 33px;
+}
+
+.phone-fill-step2 .row span {
+  display: block;
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.phone-fill-step2 .checkbox {
+  margin-bottom: 50px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.phone-fill-step2 .checkbox a {
+  font-weight: bold;
+}
+
+.phone-fill-step2 .third {
+  padding-bottom: 90px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.phone-fill-step2 .cant {
+  padding: 13px 60px 0 0;
+  width: 660px;
+  max-width: 100%;
+  height: 64px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: -32px;
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  background: #fff url("../images/base/mail.png") no-repeat right 24px center;
+}
+
+.phone-fill-step2 .btn-blue {
+  margin: 0 auto 42px;
+}
+
 .phone-fill-end {
   padding: 0 20px;
 }
@@ -900,6 +966,7 @@ header .logo {
 .phone-fill-end h3 {
   font-size: 24px;
   padding: 75px 0 33px;
+  position: relative;
 }
 
 .phone-fill-end h3 span {
@@ -907,27 +974,21 @@ header .logo {
   color: #007ac3;
 }
 
+.phone-fill-end .help {
+  right: 35px;
+  top: 71px;
+}
+
 .phone-fill-end p {
   padding-bottom: 30px;
 }
 
-.online-fill h2, .online-fill-step2 h2, .online-fill-step3 h2, .online-fill-step35 h2, .online-fill-step4 h2, .online-fill-step5 h2 {
+.o-fix {
   padding: 0 145px;
   line-height: 30px;
 }
 
-.online-fill .form-box {
-  background-color: #f0f1f2;
-  padding: 0 20px;
-}
-
-.online-fill .form-box .box {
-  float: left;
-  position: relative;
-}
-
 .online-fill .form-box.first {
-  margin-bottom: 10px;
   padding-bottom: 20px;
 }
 
@@ -964,7 +1025,6 @@ header .logo {
 
 .online-fill .form-box.second {
   padding-bottom: 35px;
-  margin-bottom: 10px;
 }
 
 .online-fill .form-box.second .box {
@@ -1059,19 +1119,8 @@ header .logo {
   background-color: #003f65;
 }
 
-.online-fill-step2 .form-box {
-  background-color: #f0f1f2;
-  padding: 0 20px;
-}
-
-.online-fill-step2 .form-box .box {
-  float: left;
-  position: relative;
-}
-
 .online-fill-step2 .form-box.first {
   padding-bottom: 35px;
-  margin-bottom: 10px;
 }
 
 .online-fill-step2 .form-box.first .form-control:nth-of-type(2) .box {
@@ -1149,8 +1198,8 @@ header .logo {
   margin-bottom: 40px;
 }
 
-.online-fill-step2 .form-box.second .form-control {
-  margin-top: 50px;
+.online-fill-step2 .form-box.second .checked {
+  margin-bottom: 50px;
 }
 
 .online-fill-step2 .form-box.second .form-control .box {
@@ -1166,17 +1215,12 @@ header .logo {
 }
 
 .online-fill-step3 .form-box {
-  background-color: #f0f1f2;
   padding: 20px 20px 40px;
   margin-bottom: 35px;
 }
 
 .online-fill-step3 .radio-buttons {
   text-align: left;
-}
-
-.online-fill-step3 .box {
-  float: left;
 }
 
 .online-fill-step3 .form-control span {
@@ -1206,30 +1250,24 @@ header .logo {
 }
 
 .online-fill-step35 .form-box {
-  background-color: #f0f1f2;
   padding: 20px 20px 40px;
   margin-bottom: 35px;
 }
 
-.online-fill-step35 .form-control > span {
+.online-fill-step35 .form-control > div {
   padding-bottom: 10px;
   display: block;
   position: relative;
 }
 
-.online-fill-step35 .form-control > span .info-popup a {
+.online-fill-step35 .form-control > div .info-popup a {
   right: 47.5%;
   top: 0;
 }
 
-.online-fill-step35 .form-control > span .popup {
+.online-fill-step35 .form-control > div .popup {
   bottom: 52px;
-  right: 44.7%;
-}
-
-.online-fill-step35 .form-control .box {
-  float: left;
-  position: relative;
+  right: 45.3%;
 }
 
 .online-fill-step35 .form-control .box > span {
@@ -1284,18 +1322,8 @@ header .logo {
   margin-bottom: 10px;
 }
 
-.online-fill-step4 .form-box {
-  background-color: #f0f1f2;
-  padding: 0 20px;
-}
-
-.online-fill-step4 .form-box .box {
-  float: left;
-}
-
 .online-fill-step4 .form-box.first {
   padding-bottom: 40px;
-  margin-bottom: 10px;
 }
 
 .online-fill-step4 .form-box.first .box {
@@ -1367,13 +1395,8 @@ header .logo {
   left: 140px;
 }
 
-.online-fill-step5 .form-box {
-  background-color: #f0f1f2;
-  padding: 0 20px;
-}
-
-.online-fill-step5 .first, .online-fill-step5 .second, .online-fill-step5 .third, .online-fill-step5 .fourth {
-  margin-bottom: 10px;
+.online-fill-step5 .btn-blue {
+  margin: 0 auto 42px;
 }
 
 .online-fill-step5 .row {
@@ -1414,6 +1437,7 @@ header .logo {
   padding: 13px 60px 0 0;
   width: 660px;
   height: 64px;
+  max-width: 100%;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -1424,9 +1448,347 @@ header .logo {
   background: #fff url("../images/base/mail.png") no-repeat right 24px center;
 }
 
-/*==========  Mobile First Method  ==========*/
-/* Custom, iPhone Retina */
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-/* Medium Devices, Desktops */
-/* Large Devices, Wide Screens */
+.online-fill-end {
+  padding: 0 20px 79px;
+}
+
+.online-fill-end h3 {
+  font-size: 24px;
+  padding: 75px 0 33px;
+  position: relative;
+}
+
+.online-fill-end h3 span {
+  font-weight: 700;
+  color: #007ac3;
+}
+
+.online-fill-end .help {
+  right: 35px;
+  top: 71px;
+}
+
+.online-fill-end p {
+  padding-bottom: 30px;
+}
+
+.online-fill-end h4 {
+  padding-bottom: 10px;
+}
+
+.online-fill-end li {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.online-fill-end ul {
+  margin-bottom: 20px;
+}
+
+.online-fill-end footer {
+  padding-bottom: 70px;
+}
+
+.online-fill-end footer a {
+  font-weight: 700;
+  color: #007ac3;
+}
+
+.online-fill-end .container > a {
+  width: 520px;
+  max-width: 100%;
+  border-radius: 8px;
+  background: #007ac3 url("../images/base/mail-white.png") no-repeat right 17px center;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  padding: 20.5px 52px 20.5px 0;
+  padding-right: 52px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 970px) {
+  .prizes, .little-ones {
+    display: none;
+  }
+  .sliders {
+    padding: 0 20px;
+  }
+  .online-fill .form-box.first .form-control {
+    float: none;
+  }
+  .online-fill .form-box.first .box, .online-fill .form-box.second .box {
+    float: none;
+    width: 100%;
+    margin-left: 0 !important;
+    margin-bottom: 10px;
+  }
+  .online-fill .form-box.second .info-popup .popup {
+    right: 0;
+  }
+  .online-fill .form-box.third .info-popup a {
+    position: static;
+    margin: 10px auto;
+  }
+  .online-fill .form-box.third .popup {
+    left: 0;
+    right: 0 !important;
+    margin: 0 auto;
+    bottom: 35px !important;
+  }
+  .online-fill .form-box.third .popup:after {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+  .online-fill-step2 .form-box.first {
+    padding-bottom: 25px;
+  }
+  .online-fill-step2 .form-box.first .form-control:nth-of-type(4) .box, .hidden .box, .online-fill-step4 .form-box.second .form-control:nth-of-type(4) .box {
+    margin-bottom: 10px;
+  }
+  .online-fill-step2 .form-box.second .form-control .box {
+    margin-bottom: 10px;
+  }
+  .online-fill-step3 .box {
+    width: 100% !important;
+    float: none !important;
+    margin-bottom: 25px;
+  }
+  .online-fill-step3 .form-control:first-child .box:first-child .radio-buttons label {
+    margin-bottom: 30px !important;
+  }
+  .online-fill-step3 .form-box {
+    padding: 20px 10px 40px;
+  }
+  .online-fill-step35 .form-control .box {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+  .online-fill-step35 .form-control:first-child .box:last-child input {
+    width: 133px;
+  }
+  .online-fill-step35 .form-control > div .info-popup a {
+    position: static;
+    margin-top: 10px;
+  }
+  .online-fill-step35 .form-control > div .popup {
+    right: auto;
+    left: -10px;
+  }
+  .online-fill-step35 .popup:after {
+    right: auto;
+    left: 9px;
+  }
+  .online-fill-step35 .form-box {
+    padding: 20px 10px 40px;
+  }
+}
+
+@media only screen and (max-width: 962px) {
+  .phone-fill .form-box.second .box:last-child {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .form-control .left, .form-control .right {
+    width: 100%;
+    float: none;
+  }
+  .form-control .left, .form-control .right {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .index form h2:after {
+    display: none;
+  }
+  .index .checkbox p {
+    padding-right: 33px;
+  }
+  .index .login-mode h2 {
+    padding: 23px 0 25px;
+  }
+  .index .login-mode .fill {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+  .index .login-mode .fill.phone {
+    margin-bottom: 45px;
+  }
+  .index .login-mode .fill.phone:after {
+    display: none;
+  }
+  .index .login-mode {
+    padding-bottom: 50px;
+  }
+  .index .login-mode footer {
+    padding: 0;
+  }
+  .index form {
+    padding: 40px 10px 20px;
+  }
+  .phone-fill h2, .o-fix {
+    padding: 0;
+  }
+  .form-box {
+    padding: 0 10px;
+  }
+  .phone-fill .form-box.first .box, .phone-fill .form-box.second .box {
+    width: 100% !important;
+    float: none !important;
+  }
+  .phone-fill .form-box.second .box:last-child {
+    margin-left: 0;
+  }
+  .form-box-title {
+    margin: 0 -10px 20px;
+    padding: 13.5px 10px;
+    text-align: center;
+  }
+  .phone-fill .checkbox label {
+    margin-bottom: 100px;
+  }
+  .form-title-blue {
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .help {
+    position: static;
+    margin: 0 auto;
+  }
+  .phone-fill-step2 .row, .online-fill-step5 .row {
+    float: none;
+  }
+  .phone-fill-step2 .row .box, .online-fill-step5 .row .box {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .phone-fill-end h3, .online-fill-end h3 {
+    line-height: 50px;
+    padding-top: 30px;
+    text-align: center;
+  }
+  .phone-fill-end, .online-fill-end {
+    padding: 0 0 79px;
+  }
+  .phone-fill-end p, .online-fill-end p {
+    text-align: center;
+  }
+  .phone-fill .radio-buttons {
+    text-align: left;
+  }
+  .navigation.online {
+    width: 590px;
+  }
+  .navigation.online li {
+    margin-right: 136px;
+  }
+  .navigation.online li:last-child {
+    margin-right: 0;
+  }
+  .online-fill-step2 .form-box.first .box, .hidden .box, .online-fill-step4 .form-box.second .box {
+    float: none;
+    width: 100% !important;
+  }
+  .online-fill-step2 .form-box.first .form-control:nth-of-type(3) .box input, .hidden .form-control:nth-child(2) .box input, .online-fill-step4 .form-box.second .form-control:nth-of-type(3) .box input {
+    float: none !important;
+    width: 100% !important;
+  }
+  .online-fill-step2 .form-box.first .form-control:nth-of-type(3) .box span, .hidden .form-control:nth-child(2) .box span, .online-fill-step4 .form-box.second .form-control:nth-of-type(3) .box span {
+    float: none !important;
+    padding-left: 0 !important;
+  }
+  .online-fill-step2 .form-box.second .form-control .box {
+    float: none;
+    width: 100%;
+  }
+  .navigation {
+    margin-top: 40px;
+  }
+  .online-fill-step4 .form-box.first .box {
+    float: none;
+    width: 100%;
+    margin: 0 0 10px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .phone-fill .checkbox label {
+    margin-bottom: 125px;
+  }
+  .navigation.online {
+    width: 265px;
+  }
+  .navigation.online li {
+    margin-right: 55px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .index .top-box .title {
+    height: auto;
+    max-width: 100%;
+    line-height: 38px;
+    padding: 20px 0;
+  }
+  .index form h2 {
+    line-height: 28px;
+  }
+  .phone-fill .checkbox label {
+    margin-bottom: 160px;
+  }
+  .phone-fill-step2 .cant, .online-fill-step5 .cant {
+    background: #fff;
+    padding-right: 0;
+  }
+  .btn-ghost {
+    position: static;
+    margin: 0 auto 20px;
+  }
+  .online-fill-step2 .form-box.second > .checkbox {
+    margin-bottom: 30px;
+  }
+  .online-fill-end .container > a {
+    padding: 20.5px 0;
+    background: #007ac3;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .index .checkbox p {
+    margin-top: 15px;
+  }
+  .phone-fill-step2 .third, .online-fill-step5 .fourth {
+    padding-bottom: 120px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .phone-fill .checkbox label {
+    margin-bottom: 210px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .phone-fill .checkbox label {
+    margin-bottom: 270px;
+  }
+  .phone-fill-step2 .third, .online-fill-step5 .fourth {
+    padding-bottom: 160px;
+  }
+  .phone-fill label {
+    display: block !important;
+    margin-bottom: 10px;
+  }
+  .online-fill-step2 .form-box.second > .checkbox {
+    margin-bottom: 45px;
+  }
+  .form-title-blue {
+    font-size: 28px;
+  }
+}

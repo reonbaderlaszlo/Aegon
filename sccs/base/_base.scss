@@ -9,15 +9,17 @@
     @extend .clear;
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
     .container {
-        width: 744px;
+        width: 100%;
     }
 }
 
 @media (min-width: 64em) {
     .container {
-        width: 960px;
+        width: 970px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -89,8 +91,6 @@ main {
         }
     }
 }
-
-/* Slider */
 
 .prizes {
     padding: 18px 85px;
@@ -180,6 +180,7 @@ main {
         border-radius: 50%;
         right: 20px;
         top: -3px;
+        z-index: 10;
         background: #007ac3 url("../images/base/i-white.png") no-repeat center;
     }
 

@@ -1,5 +1,4 @@
-/* FORMS */
-
+/* Forms */
 .form-control {
     margin-bottom: 18px;
 
@@ -14,6 +13,8 @@
         padding-left: 9px;
         display: block;
         margin-bottom: 4px;
+        position: relative;
+        z-index: 0;
 
         span {
             color: #ee363c;
@@ -21,7 +22,7 @@
         }
     }
 
-    input {
+    input, select {
         width: 100%;
         height: 54px;
         border-radius: 6px;
@@ -161,14 +162,12 @@
     margin: 0 auto 42px;
 }
 
-.form-box-title {
-    height: 60px;
-    line-height: 60px;
+.form-box-title {    
     box-shadow: 0 1px #d9dadb;
     font-size: 24px;
     color: #007ac3;
     margin: 0 -20px 20px;
-    padding: 0 20px;
+    padding: 13.5px 20px;
 }
 
 .sub-title {
@@ -177,4 +176,15 @@
     color: #282828;
     margin: 38px 0 15px;
     position: relative;
+}
+
+.form-box {
+    background-color: #f0f1f2;
+    padding: 0 20px;
+    margin-bottom: 10px;
+
+    .box {
+        float: left;
+        position: relative;
+    }
 }

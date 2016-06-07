@@ -1,3 +1,4 @@
+/* Buttons */
 .btn-blue {
     color: #fff;
     border-radius: 8px;
@@ -29,4 +30,10 @@
     position: absolute;
     bottom: 42px;
     padding-left: 10px;
+    
+    @include transition-all;
+
+    &:hover {
+        background-color: #ebf1f4;;
+    }
 }
