@@ -1729,6 +1729,13 @@ header .logo {
   }
 }
 
+@media only screen and (max-width: 560px) {
+  .phone-fill-step2 .cant, .online-fill-step5 .cant {
+    background: #fff;
+    padding-right: 0;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .index .top-box .title {
     height: auto;
@@ -1741,10 +1748,6 @@ header .logo {
   }
   .phone-fill .checkbox label {
     margin-bottom: 160px;
-  }
-  .phone-fill-step2 .cant, .online-fill-step5 .cant {
-    background: #fff;
-    padding-right: 0;
   }
   .btn-ghost {
     position: static;
